@@ -1,0 +1,3584 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amazon</title>
+  <link rel="icon" href="../Amazon/images/illustration/favicon.ico">
+  <link rel="stylesheet" href="../Amazon/css/style.css">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,600;1,700&family=Lobster&family=Oswald:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet">
+
+
+
+</head>
+
+<body class="bgbody" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+  <section class="container-fluid">
+
+    <div class="row  mybgcolor p-1 d-flex align-items-center">
+      <div class="col-3 d-none d-lg-inline">
+        <div class="row">
+          <div class="col-5 ">
+            <div class="btn-group logohover p-1" role="group" aria-label="Basic example">
+              <button type="button" class="logo border-0 "></button>
+              <button type="button" class="btn btn-sm border-0 text-white text-start">.co.uk</button>
+
+            </div>
+          </div>
+          <div class="col-7 ">
+            <div class=" locationhover p-2 rounded-1" role="group" aria-label="Basic example" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              <button type="button" class="btn location border-0 text-white"> <span
+                  class="badge text-start location1">Hello <br>Select Your Address </span>
+
+              </button>
+
+            </div>
+
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content text-dark">
+                  <div class="modal-header bg-modalbg text-dark">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Choose your location
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <p>Delivery options and delivery speeds may vary for different locations</p>
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-warning" type="button">Sign in to see your addresses</button>
+
+                    </div>
+                    <div class="divider mt-3"> enter a UK postcode </div>
+
+
+
+                    <div class="row mb-3 mt-3">
+
+                      <div class="col-8 ">
+                        <form><input type="text" class="form-control" aria-label="postcode"></form>
+                      </div>
+                      <div class="col-4 d-grid">
+                        <button type="button"
+                          class="btn  btn-light shadow bg-body rounded  btn-outline-secondary">Apply</button>
+                      </div>
+
+                    </div>
+
+                    <div class="divider mt-3"> or </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <select class="form-select form-select-lg mb-3 bg-modalbg" aria-label=".form-select-lg example">
+                      <option selected>Deliver outside the UK</option>
+                      <option value="1">France</option>
+                      <option value="2">Germany</option>
+                      <option value="3">United States</option>
+                      <option value="3">India</option>
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-sm-12  d-sm-inline  ">
+        <div class="row">
+          <div class="col-12">
+            <div class="input-group" id="focusColor">
+              <button class="btn dropdown-toggle bg-modalbg allbtn" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">All</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action before</a></li>
+                <li><a class="dropdown-item" href="#">Another action before</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+              <input type="text" class="form-control shadow-none border-0" placeholder="Search Amazon.co.uk"
+                aria-label="Recipient's username" aria-describedby="button-addon2" id="searchfocus">
+              <button class="btn bg-btncolor" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-4 d-none d-lg-inline">
+        <div class="row ">
+          <div class="col-2 ">
+            <div class="btn-group flagbtn" role="group" aria-label="Button group with nested dropdown"
+              onmouseover="openWindow()" onmouseout="closeWindow()" aria-hidden="true">
+              <button type="button  " class="btn btn-lg flag border-0"></button>
+
+              <div class="btn-group" role="group">
+                <button type="button " class="btn mybgcolor dropdown-toggle border-0 text-white "
+                  data-bs-toggle="dropdown" aria-expanded="false" data-content="Popover with data-trigger">
+
+                </button>
+
+                <div class="dropdown-menu  dropdown-menushow mt-5">
+                  <div class="dropdown-menushow p-2">
+                    <p class="mb-3"><small>Change currency <a href="#"> Learn more</a></small></p>
+                    <p class="mb-3">£ - GBP - British Pound <span><a href=""> change</a></span></p>
+                    <hr w-75>
+                    <p class="mb-3"><small>You are shopping on Amazon.co.uk</small></p>
+                    <p class="text-center"><small><a href="#">Change country/region</a></small></p>
+
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-4">
+
+
+            <div class="btn-group dropdownbtn" role="group">
+
+              <div class="accounthover p-2 rounded-1">
+                <button type="button " class="btn mybgcolor dropdown-toggle border-0 text-white position-relative "
+                  data-bs-toggle="dropdown" aria-expanded="false" data-content="Popover with data-trigger">
+                  Account & Lists <span class="badge position-absolute top-0 start-50 translate-middle">Hello, Sign
+                    In</span>
+                </button>
+              </div>
+
+
+              <div class="dropdown-menu  dropdown-menushow1">
+                <div class="dropdown-menushow2 mx-auto ">
+
+                  <div class="row ">
+                    <div class="col-12 ">
+                      <button type="button" class="btn btn-warning mx-auto ">Sign In</button>
+                      <p class="text-center"><small>New customer? Start here.</small></p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 ">
+                      <div class="row listclass">
+                        <div class="col-6 border-end">
+
+                          <ul>
+                            <li><a class="dropdown-item" href="#team">Your List</a></li>
+                            <li><a class="dropdown-item" href="#team">ListItem</a></li>
+                            <li><a class="dropdown-item" href="#team">ListItem</a></li>
+                            <li><a class="dropdown-item" href="#team">ListItem</a></li>
+                            <li><a class="dropdown-item" href="#team">ListItem</a></li>
+
+                          </ul>
+                        </div>
+                        <div class="col-6">
+
+                          <ul>
+                            <li><a class="dropdown-item" href="#pricing">Your Account</a></li>
+                            <li><a class="dropdown-item" href="#team">ListItem</a></li>
+                            <li><a class="dropdown-item" href="#team">ListItem</a></li>
+                            <li><a class="dropdown-item" href="#team">ListItem</a></li>
+                            <li><a class="dropdown-item" href="#team">ListItem</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="ordershover p-2 rounded-1">
+
+              <button type="button" class="btn mybgcolor border-0 text-white  position-relative p-1"> & Orders
+                <span class="badge position-absolute top-0 start-50 translate-middle">Returns</span>
+
+              </button>
+
+            </div>
+
+          </div>
+          <div class="col-3">
+
+            <div class=" carthover p-2 rounded-1 " role="group" aria-label="Basic example">
+              <button type="button" class="btn cart border-0 text-white"> <span class="badge text-start cart1">Basket
+                </span>
+
+              </button>
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ...................................--------------------------- -->
+
+
+
+    <div class="row">
+      <div class="col-12  p-0">
+
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span> All
+            </button>
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-start flex-grow-1">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-success" type="submit">Search</button>
+                </form>
+              </div>
+
+            </div>
+
+            <!-- ------------------------------- -->
+
+            <nav class="navbar navbar-expand-lg me-auto p-0">
+              <div class="container-fluid">
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  <ul class="navbar-nav  ">
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="#">Best Sellers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Gift Ideas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Music</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Prime Video</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Today's Deals</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">New Releases</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Toys & Games</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle dropdownprime" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" onmouseover="openWindow1()" onmouseout="closeWindow1()">
+                        Prime
+                      </a>
+                      <div class="dropdown-menu  dropdown-menushowprime">
+                        <div class="dropdown-menushowprime mx-auto ">
+                          <div class="card text-dark border-0">
+                            <img
+                              src="../Amazon/images/illustration/uk_digital-music-mp3_try-prime-flyout_340x450_b1._CB485970346_.jpg"
+                              class="card-img" alt="...">
+                            <div class="card-img-overlay text-center ">
+                              <h4 class="card-title text-dark">amazon <span class="text-primary">prime</span></h4>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+
+
+
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Books</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Audible</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">PC & Video Games</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </div>
+            </nav>
+            <form>
+
+              <button class="btn bg-mycolor text-secondary fs-5" type="submit">Free delivery on your first
+                order</button>
+            </form>
+
+
+          </div>
+
+        </nav>
+
+
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+
+    <div class="row" id="home">
+      <div class="col-12  p-0">
+        
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active " data-bs-interval="3000">
+              <img src="../Amazon/images/background/61mu3uNU+3L._SX3000_.jpg" class=" img-fluid" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../Amazon/images/background/61wbb4lb6PL._SX3000_.jpg" class=" img-fluid" alt="...">
+            </div>
+
+            <div class="carousel-item">
+              <img src="../Amazon/images/background/71vTeKGSmOL._SX3000_.jpg" class="img-fluid" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev" onclick="showBorderprev()">
+            <span class="" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next" onclick="showBordernext()">
+            <span class="" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <div class="row ">
+      <div class="col-12  herocards">
+        <div class="row  p-4 card-group">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0">
+              <h5 class="card-title me-auto p-3">Top Deal </h5>
+              <div class=" mx-auto">
+                <a href="#"><img src="../Amazon/images/illustration/31Ri-FAMBUL._AC_SY230_.jpg" class="img-fluid "
+                    alt="..."></a>
+
+              </div>
+
+              <div class="card-body ">
+
+                <form action="" class="me-auto">
+                  <a class="btn btn-sm btn-danger " href="#" role="button">Up to 20% off </a><a href="#"
+                    class="text-decoration-none text-danger p-2">Deal</a>
+                    <p class="text-danger small px-1">Ends in
+                      <span id="timer"></span></p>
+                </form>
+                <p><small><a href="#" class="text-decoration-none text-dark">Apple AirPods</a></small></p>
+              </div>
+              <div class="card-footer border-0  bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> Shop more deals</a></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0">
+              <h5 class="card-title me-auto p-3">Echo Show 15</h5>
+
+              <div class="card-body">
+                <div class="">
+                  <a href="#"><img src="../Amazon/images/illustration/NTZlYmE5Nzgt-w379._SY304_CB587972523_.jpg"
+                      class="img-fluid " alt="..."></a>
+
+                </div>
+
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> See more</a></small>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0">
+              <h5 class="card-title me-auto p-3">Noise cancelling earbuds</h5>
+
+
+              <div class="card-body">
+
+                <div class=" mx-auto">
+                  <a href="#"><img src="../Amazon/images/illustration/ODIxN2VjZGUt-w379._SY304_CB587962630_.jpg"
+                      class="img-fluid " alt="..."></a>
+
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none">
+                    Discover Echo Buds</a></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0">
+              <h5 class="card-title me-auto p-3">Save resources, buy second-hand</h5>
+
+
+              <div class="card-body">
+
+                <div class=" mx-auto">
+                  <a href="#"><img src="../Amazon/images/illustration/GW_Sust1._SY304_CB593369177_.jpg"
+                      class="img-fluid " alt="..."></a>
+
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> Shop now</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------ -->
+
+
+        <div class="row  p-4 card-group">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0">
+              <h5 class="card-title me-auto p-3">All-new Echo Auto</h5>
+
+
+              <div class="card-body">
+
+                <div class=" mx-auto">
+                  <a href="#"><img src="../Amazon/images/illustration/MjFkOGFhNDMt-w379._SY304_CB588227079_.jpg"
+                      class="img-fluid " alt="..."></a>
+
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> Shop now</a></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0">
+              <h5 class="card-title me-auto p-3">Echo Show 15</h5>
+
+              <div class="card-body">
+                <div class="">
+                  <a href="#"><img
+                      src="../Amazon/images/illustration/KTD_Homepage_Desktop_Card_758x608px_T2_E40.5x._SY304_CB587550431_.jpg"
+                      class="img-fluid " alt="..."></a>
+
+                </div>
+
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> See more</a></small>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0">
+              <h5 class="card-title me-auto p-3">Noise cancelling earbuds</h5>
+
+
+              <div class="card-body">
+
+                <div class=" mx-auto">
+                  <a href="#"><img
+                      src="../Amazon/images/illustration/SANTIONINGEVIL_DesktopImageCard_379x304_CREATIVECONCEPT_POST_FINAL_49942_en-GB._SY304_CB613881537_.jpg"
+                      class="img-fluid " alt="..."></a>
+
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none">
+                    Discover Echo Buds</a></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0">
+              <h5 class="card-title me-auto p-3">Save resources, buy second-hand</h5>
+
+
+              <div class="card-body">
+
+                <div class=" mx-auto">
+                  <a href="#"><img src="../Amazon/images/illustration/NTZlYmE5Nzgt-w379._SY304_CB587972523_.jpg"
+                      class="img-fluid " alt="..."></a>
+
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> Shop now</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- --------------------books----------------- -->
+
+    <div class="row">
+      <div class="col-12 px-5 d-sm-none d-lg-block">
+        <div class="row ">
+          <div class="col-12 bg-white p-3">
+            <h5 class="me-auto p-3">Best Sellers in Books</h5>
+
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                  <div class="row ">
+                    <div class="col-4 ">
+                      <div class="row">
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/51C6iO388kL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/61+TO1FmPJL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/815IPT1OUeL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 ">
+                      <div class="row">
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/81BE-iq4mFL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/71VZHVFiywL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/919Ej9O9rDL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 ">
+                      <div class="row">
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/71y7pAExT2L._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/81PdOsc95OL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/71p+rKfcNKL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+                <div class="carousel-item">
+
+                  <div class="row ">
+                    <div class="col-4 ">
+                      <div class="row">
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/51C6iO388kL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/61+TO1FmPJL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/815IPT1OUeL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 ">
+                      <div class="row">
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/81BE-iq4mFL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/71VZHVFiywL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/919Ej9O9rDL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 ">
+                      <div class="row">
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/71y7pAExT2L._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/81PdOsc95OL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/71p+rKfcNKL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row ">
+                    <div class="col-4 ">
+                      <div class="row">
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/51C6iO388kL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/61+TO1FmPJL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/815IPT1OUeL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 ">
+                      <div class="row">
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/81BE-iq4mFL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/71VZHVFiywL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/919Ej9O9rDL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 ">
+                      <div class="row">
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/71y7pAExT2L._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/81PdOsc95OL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/71p+rKfcNKL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- ...................................... -->
+
+    <div class="row">
+      <div class="col-12 border">
+        <div class="row  p-4 card-group">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 border-0 rounded-0 p-3">
+              <h5 class=" me-auto">Save up to 15% extra</h5>
+              <figure class="figure">
+                <a href="#" class="text-decoration-none "> <img
+                    src="../Amazon/images/illustration/41vEaNFVD+L._SY160_.jpg" class="figure-img img-fluid rounded-0"
+                    alt="...">
+                  <figcaption class="figure-caption text-dark ">Subscribe & Save</figcaption>
+                </a>
+              </figure>
+
+
+              <div class="card-body p-0">
+
+                <div class="d-flex gap-1 ">
+                  <figure class="figure ">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/314kAkcrcVL._SY75_.jpg"
+                        class="figure-img img-fluid rounded-0 card-img-top" alt="...">
+                      <figcaption class="figure-caption text-dark">Household</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure ">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/31K7li8qdaL._SY75_.jpg"
+                        class="figure-img img-fluid rounded-0 card-img-top" alt="...">
+                      <figcaption class="figure-caption text-dark">pet supplies</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/31hIp6MRi1L._SY75_.jpg"
+                        class="figure-img img-fluid rounded-0 card-img-top" alt="...">
+                      <figcaption class="figure-caption text-dark">Baby</figcaption>
+                    </a>
+                  </figure>
+
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white ">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> See more</a></small>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0 p-3">
+              <h5 class=" me-auto">Shop unique gifts</h5>
+              <div class="d-flex gap-3">
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1566607_3079696_186x116_1X_en_GB._SY116_CB592244705_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Electronics</figcaption>
+                  </a>
+                </figure>
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1585241_3174477_186x116_1X_en_GB._SY116_CB587811544_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Sustainability</figcaption>
+                  </a>
+                </figure>
+              </div>
+
+              <div class="card-body p-0">
+                <div class="d-flex gap-3">
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1566607_3079695_186x116_1X_en_GB._SY116_CB592244705_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Home</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1535459_2872342_186x116_1X_en_GB._SY116_CB616364689_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Health & Beauty</figcaption>
+                    </a>
+                  </figure>
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> Discover more</a></small>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0 p-3">
+              <h5 class=" me-auto">Garden & outdoors</h5>
+              <div class="d-flex gap-3">
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1577044_3141305_186x116_1X_en_GB._SY116_CB588739327_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Sprinkler</figcaption>
+                  </a>
+                </figure>
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1577044_3141316_186x116_1X_en_GB._SY116_CB588739327_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Reels</figcaption>
+                  </a>
+                </figure>
+              </div>
+
+              <div class="card-body p-0">
+                <div class="d-flex gap-3">
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1554341_2983226_186x116_1X_en_GB._SY116_CB594162172_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Frame pools</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1554341_2983230_186x116_1X_en_GB._SY116_CB594162172_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Charcoal grill</figcaption>
+                    </a>
+                  </figure>
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> Explore now</a></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0 p-3">
+              <h5 class=" me-auto">Games and toys</h5>
+              <div class="d-flex gap-3">
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1577669_3144745_186x116_1X_en_GB._SY116_CB588608908_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Boards</figcaption>
+                  </a>
+                </figure>
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1577669_3144739_186x116_1X_en_GB._SY116_CB588608908_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Playing cards</figcaption>
+                  </a>
+                </figure>
+              </div>
+
+              <div class="card-body p-0">
+                <div class="d-flex gap-3">
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1577669_3144744_186x116_1X_en_GB._SY116_CB588608908_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Playhouses</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1577669_3144743_186x116_1X_en_GB._SY116_CB588608908_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Dolls</figcaption>
+                    </a>
+                  </figure>
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> Explore now</a></small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+    <!-- ------------------------------------------cards slider----------------- -->
+
+
+    <div class="row">
+      <div class="col-12 px-5 d-none d-lg-block d-xl-block">
+        <div class="row ">
+          <div class="col-12 bg-white">
+            <div class="heading d-flex align-items-center p-3 gap-4">
+              <h5 class="">Lightning Deals</h5>
+              <span class="text-center"><a href="#" class="text-decoration-none text-primary">See more</a></span>
+            </div>
+
+
+
+
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row border-0 ">
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <a href=""><img src="../Amazon/images/illustration/51PYtVrD4BL._SY500__AC_SY200_.jpg"
+                              class="card-img-top" alt="..."></a>
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0 " tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"></a>
+                          <p class="text-truncate">Jehiatek Kitchen Cupboard, 47” Pantry Organizers and Storage, Kitchen
+                            Pantry Cabinet White
+                            with Doors & Adjustable Shelves, Ideal for Kitchen, Living Room and Dinning Room</p>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-2 ">
+                      <div class="card h-100 border-0 rounded-0 ">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/61W-GJ6a-SL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">16% off</a><a href="#"
+                            class="text-decoration-none text-danger"></a>
+                          <p class="p-0"><small>&pound;</small><span class="fs-5">119.99</span><span
+                              class="text-secondary">was
+                              <s>&pound;159.99</s></span></p>
+                          <p class="text-truncate">kids makeup sets for girls - 59 PCS make up set for girls Washable
+                            Make Up Starter Kit, Childrens Princess Pretend Play Games Toys Presents, Little Girl
+                            Birthday Gifts Set For Age 3-12 Year Old</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0 ">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/41b4JCkYtvL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                            <span class="text-danger small px-1">Ends in
+                              <span id="timer1"></span></span>
+                          <p class="text-truncate">EMtronics Air Fryer Oven Combi, Rotisserie and Grill, Large Family
+                            Size 12L with 16 Pre-Set Menus for Oil Free Cooking &mdash; Silver</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/51OrmKns5SL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                            
+                          <p class="text-truncate">Everlasting Comfort Insulated Backpack Cooler - Leakproof Cool Bag
+                            Keeps 54 Cans Cold Up to 24 Hours - Picnic Bag, Picnic Backpack for Food, Drinks - Cooler
+                            Backpack and Rucksack for Beach, Hikes, Car</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card   h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/41iOSV5T2hL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">30% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Heat Gun, SEEKONE 2000W Professional Hot Air Gun 50℃- 600℃ Variable
+                            Temperature Control with 2-Temp Settings, Overload Protection, Double Heating Wire Fast
+                            Heating, 7 Accessories for Shrinking PVC</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/51CuiFh2U2L._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">60% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Ligarko Solar Fairy Lights Outdoor, 2 Pack 46Ft Garden Lights Solar
+                            Powered Waterproof, 120 LED 8 Modes Copper Wire Decorative Solar String Lights for Trees,
+                            Garden, Patio, Yard, Party (Cold White)</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row border-0 ">
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <a href=""><img src="../Amazon/images/illustration/51PYtVrD4BL._SY500__AC_SY200_.jpg"
+                              class="card-img-top" alt="..."></a>
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0 " tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"></a><span class="text-danger small px-1">Ends in
+                            </span>
+                          <p class="text-truncate">Jehiatek Kitchen Cupboard, 47” Pantry Organizers and Storage, Kitchen
+                            Pantry Cabinet White
+                            with Doors & Adjustable Shelves, Ideal for Kitchen, Living Room and Dinning Room</p>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-2 ">
+                      <div class="card h-100 border-0 rounded-0 ">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/61W-GJ6a-SL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">16% off</a><a href="#"
+                            class="text-decoration-none text-danger"></a>
+                          <span class="p-0"><small>&pound;</small><span class="fs-5">119.99</span><span
+                              class="text-secondary">was
+                              <s>&pound;159.99</s></span></span>
+                          <p class="text-truncate">kids makeup sets for girls - 59 PCS make up set for girls Washable
+                            Make Up Starter Kit, Childrens Princess Pretend Play Games Toys Presents, Little Girl
+                            Birthday Gifts Set For Age 3-12 Year Old</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0 ">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/51KnM2xPtmL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Cicilyna Under Sink Storage Kitchen Organizer, Stainless Under Sink
+                            Organizer Shelf with Hooks, 2 Tier Multi-Purpose Under Cabinet Storage Organizer Rack for
+                            Kitchen, Bathroom & Countertop, Black</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/51OrmKns5SL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Everlasting Comfort Insulated Backpack Cooler - Leakproof Cool Bag
+                            Keeps 54 Cans Cold Up to 24 Hours - Picnic Bag, Picnic Backpack for Food, Drinks - Cooler
+                            Backpack and Rucksack for Beach, Hikes, Car</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card   h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/41iOSV5T2hL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">30% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Heat Gun, SEEKONE 2000W Professional Hot Air Gun 50℃- 600℃ Variable
+                            Temperature Control with 2-Temp Settings, Overload Protection, Double Heating Wire Fast
+                            Heating, 7 Accessories for Shrinking PVC</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/51CuiFh2U2L._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">60% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Ligarko Solar Fairy Lights Outdoor, 2 Pack 46Ft Garden Lights Solar
+                            Powered Waterproof, 120 LED 8 Modes Copper Wire Decorative Solar String Lights for Trees,
+                            Garden, Patio, Yard, Party (Cold White)</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row border-0 ">
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <a href=""><img src="../Amazon/images/illustration/51PYtVrD4BL._SY500__AC_SY200_.jpg"
+                              class="card-img-top" alt="..."></a>
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0 " tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"></a>
+                          <p class="text-truncate">Jehiatek Kitchen Cupboard, 47” Pantry Organizers and Storage, Kitchen
+                            Pantry Cabinet White
+                            with Doors & Adjustable Shelves, Ideal for Kitchen, Living Room and Dinning Room</p>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-2 ">
+                      <div class="card h-100 border-0 rounded-0 ">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/41o4Pz4Z+mL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">16% off</a><a href="#"
+                            class="text-decoration-none text-danger"></a>
+                          <span class="p-0"><small>&pound;</small><span class="fs-5">119.99</span><span
+                              class="text-secondary">was
+                              <s>&pound;159.99</s></span></span>
+                          <p class="text-truncate">Perlegear TV Wall Bracket Swivels Tilts Extends, Full Motion TV
+                            Bracket for Most 37-75 Inch Flat&Curved TVs up to 60kg, MAX VESA 600x400mm</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0 ">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/41b4JCkYtvL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">EMtronics Air Fryer Oven Combi, Rotisserie and Grill, Large Family
+                            Size 12L with 16 Pre-Set Menus for Oil Free Cooking &mdash; Silver</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/51OrmKns5SL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Everlasting Comfort Insulated Backpack Cooler - Leakproof Cool Bag
+                            Keeps 54 Cans Cold Up to 24 Hours - Picnic Bag, Picnic Backpack for Food, Drinks - Cooler
+                            Backpack and Rucksack for Beach, Hikes, Car</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card   h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/41iOSV5T2hL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">30% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Heat Gun, SEEKONE 2000W Professional Hot Air Gun 50℃- 600℃ Variable
+                            Temperature Control with 2-Temp Settings, Overload Protection, Double Heating Wire Fast
+                            Heating, 7 Accessories for Shrinking PVC</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/51CuiFh2U2L._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">60% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Ligarko Solar Fairy Lights Outdoor, 2 Pack 46Ft Garden Lights Solar
+                            Powered Waterproof, 120 LED 8 Modes Copper Wire Decorative Solar String Lights for Trees,
+                            Garden, Patio, Yard, Party (Cold White)</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- -----------------------------------slider------------------------------------------ -->
+
+    <div class="row mt-4">
+      <div class="col-2"></div>
+      <div class="col-8 ">
+        <img src="../Amazon/images/background/Desktop_1940x500_dbbd93c2-4a83-4245-ac2b-b8e9a62bd44a (1).jpg" alt=""
+          class="img-fluid">
+      </div>
+      <div class="col-2 "></div>
+    </div>
+
+    <!-- -----------------------------card3--------------------------------------- -->
+
+
+    <div class="row">
+      <div class="col-12 border">
+        <div class="row  p-4 card-group">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 border-0 rounded-0 p-3">
+              <h5 class=" me-auto">Save up to 15% extra</h5>
+              <figure class="figure">
+                <a href="#" class="text-decoration-none "> <img
+                    src="../Amazon/images/illustration/41vEaNFVD+L._SY160_.jpg" class="figure-img img-fluid rounded-0"
+                    alt="...">
+                  <figcaption class="figure-caption text-dark ">Subscribe & Save</figcaption>
+                </a>
+              </figure>
+
+
+              <div class="card-body p-0">
+
+                <div class="d-flex gap-1 ">
+                  <figure class="figure ">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/314kAkcrcVL._SY75_.jpg"
+                        class="figure-img img-fluid rounded-0 card-img-top" alt="...">
+                      <figcaption class="figure-caption text-dark">Household</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure ">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/31K7li8qdaL._SY75_.jpg"
+                        class="figure-img img-fluid rounded-0 card-img-top" alt="...">
+                      <figcaption class="figure-caption text-dark">pet supplies</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/31hIp6MRi1L._SY75_.jpg"
+                        class="figure-img img-fluid rounded-0 card-img-top" alt="...">
+                      <figcaption class="figure-caption text-dark">Baby</figcaption>
+                    </a>
+                  </figure>
+
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white ">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> See more</a></small>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0 p-3">
+              <h5 class=" me-auto">Shop unique gifts</h5>
+              <div class="d-flex gap-3">
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1566607_3079696_186x116_1X_en_GB._SY116_CB592244705_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Electronics</figcaption>
+                  </a>
+                </figure>
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1585241_3174477_186x116_1X_en_GB._SY116_CB587811544_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Sustainability</figcaption>
+                  </a>
+                </figure>
+              </div>
+
+              <div class="card-body p-0">
+                <div class="d-flex gap-3">
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1566607_3079695_186x116_1X_en_GB._SY116_CB592244705_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Home</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1535459_2872342_186x116_1X_en_GB._SY116_CB616364689_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Health & Beauty</figcaption>
+                    </a>
+                  </figure>
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> Discover more</a></small>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0 p-3">
+              <h5 class=" me-auto">Garden & outdoors</h5>
+              <div class="d-flex gap-3">
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1577044_3141305_186x116_1X_en_GB._SY116_CB588739327_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Sprinkler</figcaption>
+                  </a>
+                </figure>
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1577044_3141316_186x116_1X_en_GB._SY116_CB588739327_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Reels</figcaption>
+                  </a>
+                </figure>
+              </div>
+
+              <div class="card-body p-0">
+                <div class="d-flex gap-3">
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1554341_2983226_186x116_1X_en_GB._SY116_CB594162172_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Frame pools</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1554341_2983230_186x116_1X_en_GB._SY116_CB594162172_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Charcoal grill</figcaption>
+                    </a>
+                  </figure>
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> Explore now</a></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0 p-3">
+              <h5 class=" me-auto">Games and toys</h5>
+              <div class="d-flex gap-3">
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1577669_3144745_186x116_1X_en_GB._SY116_CB588608908_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Boards</figcaption>
+                  </a>
+                </figure>
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1577669_3144739_186x116_1X_en_GB._SY116_CB588608908_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Playing cards</figcaption>
+                  </a>
+                </figure>
+              </div>
+
+              <div class="card-body p-0">
+                <div class="d-flex gap-3">
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1577669_3144744_186x116_1X_en_GB._SY116_CB588608908_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Playhouses</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1577669_3144743_186x116_1X_en_GB._SY116_CB588608908_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Dolls</figcaption>
+                    </a>
+                  </figure>
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> Explore now</a></small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+    <!-- ----------------------------------------------------------------------------------------------- -->
+
+
+
+    <div class="row">
+      <div class="col-12 px-5 d-sm-none d-lg-block d-xl-block">
+        <div class="row ">
+          <div class="col-12 bg-white p-3">
+            <div class="heading d-flex align-items-center p-3 gap-4">
+              <h5 class="">Additional items to explore</h5>
+              <span class="text-center"><a href="#" class="text-decoration-none text-primary">See more</a></span>
+            </div>
+
+
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+
+
+                  <div class="row gap-0">
+                    <div class="col-6 ">
+                      <div class="row ">
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/71z2-ivRVEL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 border-end">
+                          <a href="#"><img src="../Amazon/images/illustration/7159ikLjy6L._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/81y3t2ClmvL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><img src="../Amazon/images/illustration/71+Ey7cpkeL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/818JpS96aJL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/81LOHhlNbKL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="carousel-item">
+                  <div class="row gap-0">
+                    <div class="col-6 ">
+                      <div class="row ">
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/71z2-ivRVEL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 border-end">
+                          <a href="#"><img src="../Amazon/images/illustration/7159ikLjy6L._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/81y3t2ClmvL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><img src="../Amazon/images/illustration/71+Ey7cpkeL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/818JpS96aJL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/81LOHhlNbKL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="carousel-item">
+
+                  <div class="row gap-0">
+                    <div class="col-6 ">
+                      <div class="row ">
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/71z2-ivRVEL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 border-end">
+                          <a href="#"><img src="../Amazon/images/illustration/7159ikLjy6L._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/81y3t2ClmvL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><img src="../Amazon/images/illustration/71+Ey7cpkeL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/818JpS96aJL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+                        <div class="col-4 ">
+                          <a href="#"><img src="../Amazon/images/illustration/81LOHhlNbKL._AC_SY200_.jpg"
+                              class="img-fluid " alt="..."></a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- ------------------------------------------cards slider----------------- -->
+
+
+    <div class="row">
+      <div class="col-12 px-5 mt-5 d-none d-lg-block d-xl-block">
+        <div class="row ">
+          <div class="col-12 bg-white">
+            <div class="heading d-flex align-items-center p-3 gap-4">
+              <h5 class="">Trending Deals</h5>
+              <span class="text-center"><a href="#" class="text-decoration-none text-primary">See all Deals</a></span>
+            </div>
+
+
+
+
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row border-0 ">
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <a href=""><img src="../Amazon/images/illustration/51PYtVrD4BL._SY500__AC_SY200_.jpg"
+                              class="card-img-top" alt="..."></a>
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0 " tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"></a>
+                          <p class="text-truncate">Jehiatek Kitchen Cupboard, 47” Pantry Organizers and Storage, Kitchen
+                            Pantry Cabinet White
+                            with Doors & Adjustable Shelves, Ideal for Kitchen, Living Room and Dinning Room</p>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-2 ">
+                      <div class="card h-100 border-0 rounded-0 ">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/61W-GJ6a-SL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">16% off</a><a href="#"
+                            class="text-decoration-none text-danger"></a>
+                          <p class="p-0"><small>&pound;</small><span class="fs-5">119.99</span><span
+                              class="text-secondary">was
+                              <s>&pound;159.99</s></span></p>
+                          <p class="text-truncate">kids makeup sets for girls - 59 PCS make up set for girls Washable
+                            Make Up Starter Kit, Childrens Princess Pretend Play Games Toys Presents, Little Girl
+                            Birthday Gifts Set For Age 3-12 Year Old</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0 ">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/41b4JCkYtvL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">EMtronics Air Fryer Oven Combi, Rotisserie and Grill, Large Family
+                            Size 12L with 16 Pre-Set Menus for Oil Free Cooking &mdash; Silver</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/51OrmKns5SL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Everlasting Comfort Insulated Backpack Cooler - Leakproof Cool Bag
+                            Keeps 54 Cans Cold Up to 24 Hours - Picnic Bag, Picnic Backpack for Food, Drinks - Cooler
+                            Backpack and Rucksack for Beach, Hikes, Car</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card   h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/41iOSV5T2hL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">30% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Heat Gun, SEEKONE 2000W Professional Hot Air Gun 50℃- 600℃ Variable
+                            Temperature Control with 2-Temp Settings, Overload Protection, Double Heating Wire Fast
+                            Heating, 7 Accessories for Shrinking PVC</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/51CuiFh2U2L._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">60% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Ligarko Solar Fairy Lights Outdoor, 2 Pack 46Ft Garden Lights Solar
+                            Powered Waterproof, 120 LED 8 Modes Copper Wire Decorative Solar String Lights for Trees,
+                            Garden, Patio, Yard, Party (Cold White)</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row border-0 ">
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <a href=""><img src="../Amazon/images/illustration/51PYtVrD4BL._SY500__AC_SY200_.jpg"
+                              class="card-img-top" alt="..."></a>
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0 " tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"></a>
+                          <p class="text-truncate">Jehiatek Kitchen Cupboard, 47” Pantry Organizers and Storage, Kitchen
+                            Pantry Cabinet White
+                            with Doors & Adjustable Shelves, Ideal for Kitchen, Living Room and Dinning Room</p>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-2 ">
+                      <div class="card h-100 border-0 rounded-0 ">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/61W-GJ6a-SL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">16% off</a><a href="#"
+                            class="text-decoration-none text-danger"></a>
+                          <span class="p-0"><small>&pound;</small><span class="fs-5">119.99</span><span
+                              class="text-secondary">was
+                              <s>&pound;159.99</s></span></span>
+                          <p class="text-truncate">kids makeup sets for girls - 59 PCS make up set for girls Washable
+                            Make Up Starter Kit, Childrens Princess Pretend Play Games Toys Presents, Little Girl
+                            Birthday Gifts Set For Age 3-12 Year Old</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0 ">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/51KnM2xPtmL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Cicilyna Under Sink Storage Kitchen Organizer, Stainless Under Sink
+                            Organizer Shelf with Hooks, 2 Tier Multi-Purpose Under Cabinet Storage Organizer Rack for
+                            Kitchen, Bathroom & Countertop, Black</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/51OrmKns5SL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Everlasting Comfort Insulated Backpack Cooler - Leakproof Cool Bag
+                            Keeps 54 Cans Cold Up to 24 Hours - Picnic Bag, Picnic Backpack for Food, Drinks - Cooler
+                            Backpack and Rucksack for Beach, Hikes, Car</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card   h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/41iOSV5T2hL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">30% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Heat Gun, SEEKONE 2000W Professional Hot Air Gun 50℃- 600℃ Variable
+                            Temperature Control with 2-Temp Settings, Overload Protection, Double Heating Wire Fast
+                            Heating, 7 Accessories for Shrinking PVC</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/51CuiFh2U2L._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">60% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Ligarko Solar Fairy Lights Outdoor, 2 Pack 46Ft Garden Lights Solar
+                            Powered Waterproof, 120 LED 8 Modes Copper Wire Decorative Solar String Lights for Trees,
+                            Garden, Patio, Yard, Party (Cold White)</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row border-0 ">
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <a href=""><img src="../Amazon/images/illustration/51PYtVrD4BL._SY500__AC_SY200_.jpg"
+                              class="card-img-top" alt="..."></a>
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0 " tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"></a>
+                          <p class="text-truncate">Jehiatek Kitchen Cupboard, 47” Pantry Organizers and Storage, Kitchen
+                            Pantry Cabinet White
+                            with Doors & Adjustable Shelves, Ideal for Kitchen, Living Room and Dinning Room</p>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-2 ">
+                      <div class="card h-100 border-0 rounded-0 ">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/41o4Pz4Z+mL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">16% off</a><a href="#"
+                            class="text-decoration-none text-danger"></a>
+                          <span class="p-0"><small>&pound;</small><span class="fs-5">119.99</span><span
+                              class="text-secondary">was
+                              <s>&pound;159.99</s></span></span>
+                          <p class="text-truncate">Perlegear TV Wall Bracket Swivels Tilts Extends, Full Motion TV
+                            Bracket for Most 37-75 Inch Flat&Curved TVs up to 60kg, MAX VESA 600x400mm</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0 ">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/41b4JCkYtvL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">EMtronics Air Fryer Oven Combi, Rotisserie and Grill, Large Family
+                            Size 12L with 16 Pre-Set Menus for Oil Free Cooking &mdash; Silver</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/51OrmKns5SL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">40% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Everlasting Comfort Insulated Backpack Cooler - Leakproof Cool Bag
+                            Keeps 54 Cans Cold Up to 24 Hours - Picnic Bag, Picnic Backpack for Food, Drinks - Cooler
+                            Backpack and Rucksack for Beach, Hikes, Car</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card   h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/41iOSV5T2hL._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">30% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Heat Gun, SEEKONE 2000W Professional Hot Air Gun 50℃- 600℃ Variable
+                            Temperature Control with 2-Temp Settings, Overload Protection, Double Heating Wire Fast
+                            Heating, 7 Accessories for Shrinking PVC</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 ">
+                      <div class="card  h-100 border-0 rounded-0">
+                        <div class="card-header mx-auto border-0">
+                          <img src="../Amazon/images/illustration/51CuiFh2U2L._SY500__AC_SY200_.jpg"
+                            class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body">
+                          <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                            aria-disabled="true">60% off</a><a href="#"
+                            class="text-decoration-none text-danger"><span>Deal</span></a>
+                          <p class="text-truncate">Ligarko Solar Fairy Lights Outdoor, 2 Pack 46Ft Garden Lights Solar
+                            Powered Waterproof, 120 LED 8 Modes Copper Wire Decorative Solar String Lights for Trees,
+                            Garden, Patio, Yard, Party (Cold White)</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- ...................................... -->
+
+    <div class="row">
+      <div class="col-12 border">
+        <div class="row  p-4 card-group">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 border-0 rounded-0 p-3">
+              <h5 class=" me-auto">Save up to 15% extra</h5>
+              <figure class="figure">
+                <a href="#" class="text-decoration-none "> <img
+                    src="../Amazon/images/illustration/41vEaNFVD+L._SY160_.jpg" class="figure-img img-fluid rounded-0"
+                    alt="...">
+                  <figcaption class="figure-caption text-dark ">Subscribe & Save</figcaption>
+                </a>
+              </figure>
+
+
+              <div class="card-body p-0">
+
+                <div class="d-flex gap-1 ">
+                  <figure class="figure ">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/314kAkcrcVL._SY75_.jpg"
+                        class="figure-img img-fluid rounded-0 card-img-top" alt="...">
+                      <figcaption class="figure-caption text-dark">Household</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure ">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/31K7li8qdaL._SY75_.jpg"
+                        class="figure-img img-fluid rounded-0 card-img-top" alt="...">
+                      <figcaption class="figure-caption text-dark">pet supplies</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/31hIp6MRi1L._SY75_.jpg"
+                        class="figure-img img-fluid rounded-0 card-img-top" alt="...">
+                      <figcaption class="figure-caption text-dark">Baby</figcaption>
+                    </a>
+                  </figure>
+
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white ">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> See more</a></small>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0 p-3">
+              <h5 class=" me-auto">Shop unique gifts</h5>
+              <div class="d-flex gap-3">
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1566607_3079696_186x116_1X_en_GB._SY116_CB592244705_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Electronics</figcaption>
+                  </a>
+                </figure>
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1585241_3174477_186x116_1X_en_GB._SY116_CB587811544_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Sustainability</figcaption>
+                  </a>
+                </figure>
+              </div>
+
+              <div class="card-body p-0">
+                <div class="d-flex gap-3">
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1566607_3079695_186x116_1X_en_GB._SY116_CB592244705_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Home</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1535459_2872342_186x116_1X_en_GB._SY116_CB616364689_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Health & Beauty</figcaption>
+                    </a>
+                  </figure>
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> Discover more</a></small>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0 p-3">
+              <h5 class=" me-auto">Garden & outdoors</h5>
+              <div class="d-flex gap-3">
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1577044_3141305_186x116_1X_en_GB._SY116_CB588739327_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Sprinkler</figcaption>
+                  </a>
+                </figure>
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1577044_3141316_186x116_1X_en_GB._SY116_CB588739327_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Reels</figcaption>
+                  </a>
+                </figure>
+              </div>
+
+              <div class="card-body p-0">
+                <div class="d-flex gap-3">
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1554341_2983226_186x116_1X_en_GB._SY116_CB594162172_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Frame pools</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1554341_2983230_186x116_1X_en_GB._SY116_CB594162172_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Charcoal grill</figcaption>
+                    </a>
+                  </figure>
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> Explore now</a></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card p-2 h-100 border-0 rounded-0 p-3">
+              <h5 class=" me-auto">Games and toys</h5>
+              <div class="d-flex gap-3">
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1577669_3144745_186x116_1X_en_GB._SY116_CB588608908_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Boards</figcaption>
+                  </a>
+                </figure>
+                <figure class="figure">
+                  <a href="#" class="text-decoration-none "> <img
+                      src="../Amazon/images/illustration/XCM_CUTTLE_1577669_3144739_186x116_1X_en_GB._SY116_CB588608908_.jpg"
+                      class="figure-img img-fluid rounded-0" alt="...">
+                    <figcaption class="figure-caption text-dark ">Playing cards</figcaption>
+                  </a>
+                </figure>
+              </div>
+
+              <div class="card-body p-0">
+                <div class="d-flex gap-3">
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1577669_3144744_186x116_1X_en_GB._SY116_CB588608908_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Playhouses</figcaption>
+                    </a>
+                  </figure>
+                  <figure class="figure">
+                    <a href="#" class="text-decoration-none "> <img
+                        src="../Amazon/images/illustration/XCM_CUTTLE_1577669_3144743_186x116_1X_en_GB._SY116_CB588608908_.jpg"
+                        class="figure-img img-fluid rounded-0" alt="...">
+                      <figcaption class="figure-caption text-dark ">Dolls</figcaption>
+                    </a>
+                  </figure>
+                </div>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <small class="text-muted"><a href="#" class="text-decoration-none"> Explore now</a></small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+
+    <div class="row">
+      <div class="col-12 px-5">
+        <div class="row ">
+          <div class="col-12 ">
+
+            <div class="row ">
+              <div class="col-12 col-lg-9  bg-white">
+
+                <div class="row">
+                  <div class="col-12 ">
+                    <div class="heading d-flex align-items-center p-3 gap-4">
+                      <h5 class="">Additional items to explore</h5>
+                      <span class="text-center"><a href="#" class="text-decoration-none text-primary">See
+                          more</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 p-4">
+
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+
+                          <div class="row ">
+                            <div class="col-2 ">
+                              <a href="#"><img
+                                  src="../Amazon/images/illustration/BUBBLE_KITCHEN_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img src="../Amazon/images/illustration/BUBBLE_TECH_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img src="../Amazon/images/illustration/BUBBLE_HOME_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img
+                                  src="../Amazon/images/illustration/BUBBLE_SPORT_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img
+                                  src="../Amazon/images/illustration/BUBBLE_CLOTHING_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img src="../Amazon/images/illustration/CF_B_200x200_EN._CB589308000_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+
+                          </div>
+
+
+                        </div>
+                        <div class="carousel-item">
+                          <div class="row ">
+                            <div class="col-2 ">
+                              <a href="#"><img
+                                  src="../Amazon/images/illustration/BUBBLE_KITCHEN_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img src="../Amazon/images/illustration/BUBBLE_TECH_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img src="../Amazon/images/illustration/BUBBLE_HOME_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img src="../Amazon/images/illustration/BUBBLE_TOYS_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img
+                                  src="../Amazon/images/illustration/BUBBLE_CLOTHING_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img src="../Amazon/images/illustration/CF_B_200x200_EN._CB589308000_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+
+                          </div>
+
+                        </div>
+                        <div class="carousel-item">
+                          <div class="row ">
+                            <div class="col-2 ">
+                              <a href="#"><img
+                                  src="../Amazon/images/illustration/BUBBLE_KITCHEN_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img src="../Amazon/images/illustration/BUBBLE_TECH_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img src="../Amazon/images/illustration/BUBBLE_HOME_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img src="../Amazon/images/illustration/BUBBLE_TOYS_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img
+                                  src="../Amazon/images/illustration/BUBBLE_CLOTHING_200x200._CB647222103_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="#"><img src="../Amazon/images/illustration/CF_B_200x200_EN._CB589308000_.jpg"
+                                  class="img-fluid " alt="..."></a>
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-3 d-flex justify-content-md-center justify-content-sm-center">
+                <a href="#"><img
+                    src="../Amazon/images/illustration/Desktop_300x250_e2c97a29-4ef0-40e9-aaa5-6bc2e7b9930f.jpg"
+                    class="img-fluid " alt="..."></a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+
+    <div class="row">
+      <div class="col-12 container-fluid mt-5 bg-white d-none d-xl-inline d-lg-inline">
+
+        <div class="row">
+          <div class="col-12 border myborder rounded-2 mt-4 mb-4">
+            <div class="row">
+              <div class="col-11  mt-3">
+                <h5 class="">Customers who viewed items in your browsing history also viewed</h5>
+              </div>
+              <div class="col-1 mt-2 d-flex">
+                <span>Page</span>
+                <div class="num"></div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-12   p-5">
+
+
+
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+                  <div class="carousel-inner border-bottom myborder">
+                    <div class="carousel-item item active" data-bs-interval="10000" id="item1">
+                      <div class="row">
+                        <div class="col-12 ">
+
+                          <div class="row ">
+                            <div class="col-5 ">
+                              <div class="row ">
+                                <div class="col-4 ">
+
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/6182dKE4V0L._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+
+
+                                </div>
+
+                                <!--  -->
+                                <div class="col-4 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61cvlp06ZoL._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                                        aria-disabled="true">29% off</a><a href="#"
+                                        class="text-decoration-none text-danger"><span>Deal</span></a>
+
+
+                                      <span><small>&pound;</small><b>127.99</b></span>
+                                      <p><small>Was:</small> <s><small>&pound;</small>179.99</s></p>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-4 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61VYQwbWfdL._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="row ">
+                                <div class="col-3 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61I5xHbdc5L._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="col-3 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61KFL6CK0wL._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-3 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/6182dKE4V0L._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="col-3 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61I5xHbdc5L._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item item" data-bs-interval="2000" id="item2">
+                      <div class="row">
+                        <div class="col-12 ">
+
+                          <div class="row ">
+                            <div class="col-5 ">
+                              <div class="row ">
+                                <div class="col-4 ">
+
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/6182dKE4V0L._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+
+
+                                </div>
+
+                                <!--  -->
+                                <div class="col-4 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61cvlp06ZoL._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                                        aria-disabled="true">29% off</a><a href="#"
+                                        class="text-decoration-none text-danger"><span>Deal</span></a>
+
+
+                                      <span><small>&pound;</small><b>127.99</b></span>
+                                      <p><small>Was:</small> <s><small>&pound;</small>179.99</s></p>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-4 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61VYQwbWfdL._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="row ">
+                                <div class="col-3 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61I5xHbdc5L._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="col-3 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61KFL6CK0wL._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-3 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/6182dKE4V0L._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="col-3 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61I5xHbdc5L._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item item">
+                      <div class="row">
+                        <div class="col-12 ">
+
+                          <div class="row ">
+                            <div class="col-5 ">
+                              <div class="row ">
+                                <div class="col-4 ">
+
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/6182dKE4V0L._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+
+
+                                </div>
+
+                                <!--  -->
+                                <div class="col-4 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61cvlp06ZoL._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <a href="#" class="btn btn-danger btn-sm rounded-0" tabindex="-1" role="button"
+                                        aria-disabled="true">29% off</a><a href="#"
+                                        class="text-decoration-none text-danger"><span>Deal</span></a>
+
+
+                                      <span><small>&pound;</small><b>127.99</b></span>
+                                      <p><small>Was:</small> <s><small>&pound;</small>179.99</s></p>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-4 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61VYQwbWfdL._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="row ">
+                                <div class="col-3 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61I5xHbdc5L._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="col-3 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61KFL6CK0wL._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-3 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/6182dKE4V0L._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="col-3 ">
+                                  <div class="card   h-100 border-0 rounded-0">
+                                    <div class="card-header mx-auto border-0">
+                                      <img src="../Amazon/images/illustration/61I5xHbdc5L._AC_UL160_SR160,160_.jpg"
+                                        class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+
+                                      <a href="#" class="text-decoration-none">TECLAST Tablet 10.1 Inch P40HD, 12GB
+                                        RAM+128GB ROM(TF 1TB), Android 12, T606
+                                        <p class="text-truncate">Octa-Core 1.6GHz, 4GLTE+5G WiFi,
+                                          1920x1200, Dual SIM, 4 Speaker, BT5.0/Camera
+                                          2+5MP/Type-C/GPS/6000mAh/Metal</p>
+                                      </a>
+                                      <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="text-primary">5</span>
+                                      </p>
+                                      <span><small>&pound;</small><b>99.99</b></span>
+                                      <p><small>Get it as soon as <b>Wednesday, Jun 28</b></small></p>
+                                      <p><small>FREE Delivery on orders dispatched by Amazon over £25</small></p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev" id="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next" id="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+            <!-- ------------------------------------- -->
+            <div class="row">
+
+
+              <div class="col-12 text-center">
+                <p><small>See personalised recommendations</small></p>
+                <div class="d-grid col-2 mx-auto gradient-buttons">
+                  <button class="btn btn-warning" type="button">Sign In</button>
+                  <p><small class="smalltext">New customer? <a href="#" class="text-decoration-none">Start
+                        here.</a></small></p>
+                </div>
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------footer------------------------------------------ -->
+
+
+    <div class="row">
+      <div class="col-12 d-none d-lg-block d-xl-block">
+
+        <div class="row">
+          <div class="col-12  bgfooter1 ">
+            <p class="text-center p-1"><small><a href="#home" class="text-decoration-none text-white">Back to
+                  Top</a></small></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 bgfooter2 footer2 d-sm-none d-lg-block">
+            <div class="row">
+              <div class="col-12 border-secondary border-bottom mb-4">
+                <div class="row  mt-5">
+                  <div class="col-2 "></div>
+                  <div class="col-lg-2 col-md-6 col-sm-12">
+                    <h6 class="text-white text-start mb-3">Get to Know Us</h6>
+                    <ul class="list-unstyled w-75 ">
+                      <li><a href="#" class="text-decoration-none"> Careers</a></li>
+                      <li><a href="#" class="text-decoration-none">About Us</a></li>
+                      <li><a href="#" class="text-decoration-none">UK Modern Slavery Statement</a></li>
+                      <li><a href="#" class="text-decoration-none">Sustainability</a></li>
+                      <li><a href="#" class="text-decoration-none">Amazon Science</a></li>
+                    </ul>
+
+
+
+                  </div>
+
+                  <div class="col-2 ">
+                    <h6 class="text-white text-start mb-3">Make Money with Us</h6>
+                    <ul class="list-unstyled w-75">
+                      <li><a href="#" class="text-decoration-none"> Sell on Amazon</a></li>
+                      <li><a href="#" class="text-decoration-none">Sell on Amazon Business</a></li>
+                      <li><a href="#" class="text-decoration-none">Sell on Amazon Handmade</a></li>
+                      <li><a href="#" class="text-decoration-none">Sell on Amazon Launchpad</a></li>
+                      <li><a href="#" class="text-decoration-none">Protect and build your brand</a></li>
+                      <li><a href="#" class="text-decoration-none"> Associates Programme</a></li>
+                      <li><a href="#" class="text-decoration-none"> Seller Fulfilled Prime</a></li>
+                      <li><a href="#" class="text-decoration-none">Advertise Your Products</a></li>
+                      <li><a href="#" class="text-decoration-none"> Independently Publish with Us</a></li>
+                      <li><a href="#" class="text-decoration-none">Amazon Pay</a></li>
+                      <li><a href="#" class="text-decoration-none">Host an Amazon Hub</a></li>
+                      <li><a href="#" class="text-decoration-none">&gt;See More Make Money with Us</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-2">
+                    <h6 class="text-white text-start mb-3"> Amazon Payment Methods</h6>
+                    <ul class="list-unstyled w-75">
+                      <li><a href="#" class="text-decoration-none">Amazon Platinum Mastercard</a></li>
+                      <li><a href="#" class="text-decoration-none">Amazon Classic Mastercard</a></li>
+                      <li><a href="#" class="text-decoration-none">Amazon Money Store</a></li>
+                      <li><a href="#" class="text-decoration-none">Gift Cards</a></li>
+                      <li><a href="#" class="text-decoration-none">Amazon Currency Converter</a></li>
+                      <li><a href="#" class="text-decoration-none"> Payment Methods Help</a></li>
+                      <li><a href="#" class="text-decoration-none"> Shop with Points</a></li>
+                      <li><a href="#" class="text-decoration-none">Top Up Your Account</a></li>
+                      <li><a href="#" class="text-decoration-none"> Top Up Your Account in Store</a></li>
+
+                    </ul>
+                  </div>
+                  <div class="col-2">
+                    <h6 class="text-white text-start mb-3"> Let Us Help You</h6>
+                    <ul class="list-unstyled w-75">
+                      <li><a href="#" class="text-decoration-none">COVID-19 and Amazon</a></li>
+                      <li><a href="#" class="text-decoration-none"> Track Packages or View Orders</a></li>
+                      <li><a href="#" class="text-decoration-none">Delivery Rates & Policies</a></li>
+                      <li><a href="#" class="text-decoration-none">Amazon Prime</a></li>
+                      <li><a href="#" class="text-decoration-none"> Returns & Replacements</a></li>
+                      <li><a href="#" class="text-decoration-none"> Recycling</a></li>
+                      <li><a href="#" class="text-decoration-none"> Manage Your Content and Devices</a></li>
+                      <li><a href="#" class="text-decoration-none">Amazon Mobile App</a></li>
+                      <li><a href="#" class="text-decoration-none"> Customer Service</a></li>
+                      <li><a href="#" class="text-decoration-none"> Accessibility</a></li>
+                    </ul>
+
+                  </div>
+                  <div class="col-2"></div>
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-2">
+                <div class="imagefooter mx-auto "></div>
+                <p class="text-center country"><a href="#" class="text-decoration-none p-1">Australia</a><a href="#"
+                    class="text-decoration-none p-1">Brazil</a>
+                  <a href="#" class="text-decoration-none p-1">Canada</a><a href="#"
+                    class="text-decoration-none p-1">China</a>
+                  <a href="#" class="text-decoration-none p-1">France</a><a href="#"
+                    class="text-decoration-none p-1">Germany</a>
+                  <a href="#" class="text-decoration-none p-1">India</a><a href="#"
+                    class="text-decoration-none p-1">Italy</a>
+                  <a href="#" class="text-decoration-none p-1">Japan</a><a href="#"
+                    class="text-decoration-none p-1">Mexico</a>
+                  <a href="#" class="text-decoration-none p-1">Netherlands</a><a href="#"
+                    class="text-decoration-none p-1">Poland</a>
+                  <a href="#" class="text-decoration-none p-1">Singapore</a><a href="#"
+                    class="text-decoration-none p-1">Spain</a>
+                  <a href="#" class="text-decoration-none p-1">Turkey</a><a href="#"
+                    class="text-decoration-none p-1">United Arab Emirates</a>
+
+                  <br><a href="#" class="text-decoration-none">United States</a>
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12  bgfooter3 d-none d-md-block d-lg-block d-xl-block ">
+
+        <div class="row">
+          <div class="col-12 footer3 ">
+            <div class="row">
+              <div class="col-12  mb-4">
+                <div class="row  mt-5">
+                  <div class="col-2 "></div>
+                  <div class="col-2 ">
+
+                    <ul class="list-unstyled list-group w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white"> Amazon Music</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> Stream millions
+                          of songs</a></li>
+
+                    </ul>
+
+                    <ul class="list-unstyled  w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white"> Audible</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> Download Audiobooks</a></li>
+
+                    </ul>
+
+                    <ul class="list-unstyled  w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white"> Amazon Home Services</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> Experienced pros
+                          Happiness Guarantee</a></li>
+
+                    </ul>
+
+
+                    <ul class="list-unstyled  w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white"> Amazon Warehouse</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> Deep Discounts Open-Box Products </a>
+                      </li>
+
+                    </ul>
+
+
+                  </div>
+
+
+                  <div class="col-2 ">
+
+                   <ul class="list-unstyled  w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white "> AbeBooks</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> Books, art
+                        & collectables</a></li>
+
+                    </ul>
+                    
+                    <ul class="list-unstyled  w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white"> Book Depository</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> Books With Free Delivery Worldwide
+                        </a></li>
+
+                    </ul>
+
+                    
+
+                    <ul class="list-unstyled  w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white"> IMDb</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> Movies, TV
+                        & Celebrities</a></li>
+
+                    </ul>
+
+                    
+                    <ul class="list-unstyled  w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white"> Amazon Business</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> Service for
+                        business customers </a>
+                      </li>
+
+                    </ul>
+
+
+                  </div>
+
+                  <div class="col-2">
+                    <ul class="list-unstyled  w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white"> ACX</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> Audiobook Publishing
+                        Made Easy</a></li>
+
+                    </ul>
+
+                    <ul class="list-unstyled  w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white"> DPReview</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> Digital
+                        Photography</a></li>
+
+                    </ul>
+
+                    <ul class="list-unstyled  w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white"> Kindle Direct Publishing
+                      </a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> Indie Digital & Print Publishing
+                        Made Easy</a></li>
+
+                    </ul>
+                                        
+                    
+                    <ul class="list-unstyled  w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white">Whole Foods Market</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> We Believe in  Real Food	 </a>
+                      </li>
+
+                    </ul>
+
+
+                  </div>
+                  <div class="col-2">
+                    <ul class="list-unstyled  w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white"> Amazon Web Services</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> Scalable Cloud
+                        Computing Services</a></li>
+
+                    </ul>
+
+                    <ul class="list-unstyled  w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white"> Goodreads</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> Book reviews
+                        & recommendations</a></li>
+
+                    </ul>
+
+                    <ul class="list-unstyled  w-75 ">
+                      <li><a href="#" class="text-decoration-none text-white"> Shopbop
+                      </a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary"> Designer
+                        Fashion Brands</a></li>
+
+                    </ul>
+                                        
+                    
+                    
+
+ 
+
+                  </div>
+                  <div class="col-2"></div>
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-2">
+                
+                <p class="text-center country"><a href="#" class="text-decoration-none p-1">Conditions of Use & Sale
+                </a><a href="#"
+                    class="text-decoration-none p-1">Privacy Notice</a>
+                  <a href="#" class="text-decoration-none p-1">Cookies Notice</a><a href="#"
+                    class="text-decoration-none p-1">Interest-Based Ads Notice</a></p>
+                      <p class="text-white text-center fs-6">&#169;Copyright &#169;2023 All rights reserved | This template is made with <span
+                                    class="text-danger">&hearts;</span> by <span class="text-warning">Monika</span></p>
+                
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+
+  </script>
+
+<script src="../Amazon/js/amazon.js"></script>
+
+  <!-- ----------------------------------------- -->
+
+
+  
+</body>
+
+
+</html>

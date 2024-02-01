@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin: 0px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --bs-pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --bs-footer: #b1b3b62a;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --bs-peach:#b99365;
+
+}
+
+.bg-pink{
+    background: var(--bs-peach)!important;
+}
+.btn-pink{
+    background: var(--bs-peach)!important;
+    border-radius: 0 !important;
+    
+
+}
+.txt-pink{
+    color:var(--bs-peach)!important;
+}
+
+.bg-pink:hover, .btn-pink:hover{
+    background: #d2a772!important;
+}
+
+.btn-outline-pink{
+    border-color: var(--bs-peach)!important;
+    border-radius: 0 !important;
+    
+}
+
+.btn-outline-pink:hover{
+    background-color:var(--bs-peach)!important ;
+    color: white !important;
+}
+.bg-footer{
+
+    background-color: var(--bs-footer)!important;
+}
+.card-body{
+    border: none;
+}
+
+#header{
+    
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(../images/Background/big_image_1.jpg);
+    background-size: 100% 100%;
+    padding: 400px;
+    /* overflow-x: hidden; */
+    
+}
+.navbar-nav .active{
+    color: #080808 !important;
+    
+  }
+.navbar ul li a{
+    color: #9f9283;
+}
+.btn-arrow{
+    border:none !important;
+    margin-left: -50px !important;
+    z-index: 111 !important;
+}
+.footer-style a:hover{
+    color:#cbc9c9 !important;
+}
+
+
+.youtube{
+    width:100% !important;
+}
+.mt-n1{
+    margin-top: -4rem !important;
+}
+.mt-n2{
+    margin-top: 18rem !important;
+}
+.list1 li{
+    display:inline-block;
+    padding-right:10px;
+}
+ #content1{
+    width:90%;
+    
+}  
+.form-control:focus {
+    border-color: #9696d8 !important;
+    box-shadow: 0 0 5px rgb(211, 225, 246) !important;
+  }
+
+
+.imggradient img{
+    filter: brightness(60%);
+}

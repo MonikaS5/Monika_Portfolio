@@ -1,0 +1,344 @@
+
+
+  
+:root{
+  
+       
+    --bs-mycolor1:#eeeceb;
+   --bs-btncolor: #fa6600;
+   --bs-blackcolor:#000000;
+  }
+  
+
+ .bg-black{
+    background-color: var(--bs-blackcolor)!important;
+ } 
+.bg-mycolor{
+    background-color: var(--bs-btncolor);
+}
+.bg-background{
+    background-color: var(--bs-mycolor1) !important;
+}
+.btn-mycolor{
+    background-color: var(--bs-btncolor)!important;
+}
+.text-mycolor{
+    color: var(--bs-btncolor)!important;
+}
+
+.nav1 a{
+color: white;
+font-size: 13.2px;
+}
+
+.imgicon img{
+    /* border:1px solid red; */
+    height:14px;
+    width:14px;
+    margin-top: -2px;
+} 
+ 
+.nav1 a:hover{
+    color: white;
+   text-decoration: underline;
+    }
+
+    /* ----------------------------- */
+
+
+
+
+    /*........drpdown...........  */
+
+
+    .dropdown-menu{
+        box-shadow: 4px 4px 8px rgba(0,0,0, 0.3);
+    }
+    .dropdown-menu ul{
+        list-style: none;
+        padding: 0;
+    }
+     .dropdown-menushow{
+        display: flex;
+        flex-direction: row;
+        width:700px;
+    }
+    .dropdown-menu li a{
+        color: darkorange;
+        padding:15px;
+    }
+    .dropdown-menu li:first-child a{
+        font-weight: bold;
+        color: black;
+        font-size: 20px;
+    }
+
+   
+
+/* .............................. */
+
+.hidetag{
+    font-size: 11px;
+}
+.searchbtn{
+    color:black;
+}
+.searchbtn:hover{
+    color:#fa6600 !important;
+    background-color: white!important;
+ }
+.navbtn:hover a{
+    color:#fa6600 !important;
+} 
+
+
+/* ------------------------------------------------------- */
+.input-group{
+    border:1px solid black !important;
+}
+
+
+/* =========== */
+
+
+.bg1{
+    
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(6, 6, 6, 0.8)), url(../images/Background/cvo-reveal-thd\ \(1\).jpg);
+    background-size: cover;
+    
+    
+    
+}
+
+
+.figure-img{
+    position: relative;
+    
+   
+}
+
+
+.playbtn{
+   
+    position: absolute;
+    z-index: 111;
+   margin-top: 300px;
+    margin-left: 530px;
+   border:3px solid white;
+   border-radius: 5px;
+   width:100px;
+   
+   background-color:rgb(2, 2, 2) ;
+   opacity: 0.8;
+    
+}
+.figure i{
+    font-size: 30px;
+    padding: 10px;
+    color:white;
+    text-align: center;
+}
+
+ /* body {
+    overflow-x: hidden;
+} 
+ */
+ 
+
+
+.fa-arrow-right:hover{
+    transition: transform 2s ease-out;
+    transform : translatex(10px);
+
+}
+
+
+
+
+#footer2 a:hover, #footer3 a:hover{
+    text-decoration: underline !important;
+    color:white !important;
+
+}
+
+#footer2 ul li a, #footer3 a{
+    color:white !important;
+}
+
+
+
+
+/* -------------------- */
+
+
+.effectlg {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color:#fbfbfb;
+    text-transform: uppercase;
+    background-color: #fa6600 !important;
+    
+    padding: 15px 0px;
+    width: 220px;
+    /* border-radius: 2px; */
+    overflow: hidden;
+  }
+  .effectsm{
+    
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        color:#fbfbfb;
+        text-transform: uppercase;
+        background-color: #fa6600 !important;
+        
+        padding: 15px 0px;
+        width: 140px;
+        /* border-radius: 2px; */
+        overflow: hidden;
+      }
+  
+
+.effect {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color:#fbfbfb;
+    text-transform: uppercase;
+    background-color: #fa6600 !important;
+    
+    padding: 15px 0px;
+    width: 160px;
+    /* border-radius: 2px; */
+    overflow: hidden;
+  }
+  
+  /* effect-1 styles */
+  
+  .effect.effect-1, .effectlg.effect-1, .effectsm.effect-1{
+    transition: all 0.2s linear 0s;
+    
+    &:before {
+       /* content: "\2794"; */
+     
+       content: "\f061";
+      font-family:'Font Awesome 5 Free'; 
+      font-size: 15px;
+      /* font-weight: bold; */
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 0;
+      top: 0;
+      opacity: 0;
+      height: 100%;
+      width: 40px;
+      transition: all 0.2s linear 0s;
+    }
+    
+    &:hover {
+      text-indent: -20px;
+      
+      &:before {
+        opacity: 1;
+        text-indent: 0px;
+      }
+    }
+  }
+  
+
+
+
+
+
+/* ------------------------------media query---------------------------- */
+   
+     @media screen and (min-width:576px){
+        .dropdown-menushow{
+            display: block;
+           overflow:auto ;
+           width:300px;
+
+           height: 500px;
+        }
+
+
+
+        .playbtn{
+           
+            margin-top: 100px;
+             margin-left: 170px;
+             font-size: 50px;
+             
+         }
+
+
+         .nav1{
+            visibility: hidden;
+         }
+          .hidetag{
+            display: none;
+         } 
+         .input-group{
+            border:none !important;
+        }
+        
+
+    } 
+
+    @media only screen and (min-width:768px){
+        .playbtn{
+           
+           margin-top: 150px;
+            margin-left: 230px;
+            font-size: 60px;
+            
+        }
+        .nav1{
+            visibility: hidden;
+         }
+         .hidetag{
+            display: none;
+         } 
+         .input-group{
+            border:none !important;
+        }
+        
+         
+      }
+    @media screen and (min-width:992px){
+        .dropdown-menushow{
+            display: flex;
+            flex-direction: row;
+            width:700px;
+            overflow: hidden;
+        }
+         .dropdown:hover .dropdown-menushow{
+            display: flex;
+        }
+
+
+        .playbtn{
+           
+            margin-top: 300px;
+        margin-left: 530px;
+            font-size: 80px;
+            
+        }
+
+        .nav1{
+            visibility: visible;
+         }
+         .input-group{
+            border:1px solid black !important;
+        }
+         
+    }
+
+    /*******************************************************************  */
+    

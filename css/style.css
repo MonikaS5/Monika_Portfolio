@@ -1,0 +1,419 @@
+:root {
+
+  --bs-body: #f5f5f5;
+  --bs-nav: #0b0c0c;
+
+}
+
+
+body {
+  background-color: var(--bs-body) !important;
+  font-family: 'Roboto Slab', serif !important;
+
+}
+
+/* ------------nav bar active------- */
+
+.navbar-nav .active {
+  color: #626365 !important;
+
+
+
+}
+/* ---------toggle btn------------ */
+.mytogglebtn {
+
+  background-image: linear-gradient(180deg, #cacafb, #7879c4) !important;
+  border: 1px groove #535369 !important;
+  
+}
+
+.mytogglebtn:hover {
+  box-shadow:  2px 4px #9fa9d6 !important;
+}
+
+/* ---------------------------------- */
+.nav-link {
+  color: #4885ed !important;
+
+}
+.mytextcolor{
+  color: #72a3f9!important;
+}
+
+/* -----------------------hero---------------------- */
+
+.hero1 {
+  background-image: linear-gradient(to top, rgba(15, 16, 16, 0.8), rgba(13, 13, 14, 0.9)), url(../image/background/bg1.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  padding: 300px;
+
+}
+
+.hero {
+  /* border: 1px solid white; */
+  color: #f6f5f2;
+
+  /* z-index: 111; */
+  text-align: center;
+
+
+}
+
+
+
+
+/* ---------------typewritter effect--------------- */
+
+h1 {
+  font-size: 30px;
+}
+
+.text_1 {
+  animation: text1;
+}
+
+.text_2 {
+  animation: text2;
+}
+
+.text_1,
+.text_2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 20s;
+  animation-timing-function: steps(27, end);
+  animation-iteration-count: infinite;
+}
+
+.text_1::after,
+.text_2::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes text2 {
+
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+
+  60%,
+  90% {
+    width: 11.7em;
+  }
+}
+
+@keyframes text1 {
+
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+
+  10%,
+  40% {
+    width: 10.5em;
+  }
+}
+
+@keyframes caret {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/*-----------------------loader-----------------  */
+
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: url("../image/illustration/MonikaLogo.gif") no-repeat center center rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  background-size: 15%;
+  transition: opacity 3s, visibility 3s;
+  overflow: hidden;
+}
+
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+
+}
+
+.loader::after {
+  content: "";
+  width: 110px;
+  height: 110px;
+  border: 10px solid #e5e3e3;
+  border-top-color: #484748;
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* -------------------------back to top button on scroll-------------------------- */
+
+/* Back to top */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #605f80;
+  /* background-color: #747a98; */
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow:  2px 4px #9fa9d6;
+}
+
+#myBtn:hover {
+  background-color: #637df0;
+  box-shadow:  none;
+}
+
+/* ---------------------------cards--------------------------------- */
+
+
+
+
+/* Hover Scroll Effect cards */
+
+
+
+.frame {
+  width: auto;
+  height: 300px;
+  overflow: hidden;
+  /* border: 1px solid rgb(117, 142, 160);  */
+
+  border-radius: 15px;
+  /* padding: 10px; */
+
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+
+  background: linear-gradient(rgb(227, 230, 239), rgb(116, 122, 152));
+
+
+}
+
+.frame img {
+  object-fit: cover;
+  width: 100%;
+  transform: translateY(0);
+  transition: 11s ease-out;
+  border-radius: 15px;
+
+
+}
+
+.frame:hover img {
+
+  object-fit: cover;
+  width: 100%;
+  /* Considering frame height   */
+  transform: translateY(calc(-100% + 300px));
+  transition: 11s ease-out;
+
+}
+
+
+.card {
+  background-color: #f5f5f5 !important;
+  margin-bottom: 70px;
+  padding: 50px;
+
+
+}
+
+/* ----------------------------------------- */
+
+/* ------------------------------about--------------------------- */
+
+
+#about {
+
+  margin-top: 50px;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background-color: #f5f5f5 !important;
+}
+
+.linkedin {
+  text-decoration: none;
+  color: #4885ed !important;
+}
+
+.myself {
+  font-size: 17px;
+
+}
+
+.highlight {
+  color: #696a69 !important;
+}
+
+
+.title-m {
+
+  font-weight: bold;
+
+}
+
+/* --------------myphoto----------------- */
+
+
+div.imageM::before {
+  content:url(../image/illustration/Monika.png);
+  filter:grayscale(50%);
+}​ 
+
+
+
+
+/* --------------------------------contact btn-------------- */
+
+.mybtn {
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff !important;
+  background-color: #747a98 !important;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #dad9d9;
+}
+
+.mybtn:hover {
+  background-color: #68696a !important;
+}
+
+.mybtn:active {
+  background-color: #889df9 !important;
+  box-shadow: 0 5px #666;
+  /* color:#0a0a1a !important; */
+  transform: translateY(4px);
+}
+
+/* ----------------progressbar -----------*/
+
+.progress {
+  height: 10px !important;
+
+}
+
+.progress-bar {
+  background-color: #747a98 !important;
+}
+
+/* -------cards----------- */
+
+.fa-mouse {
+
+  transition: 0.5s;
+
+
+}
+
+.fa-mouse:hover {
+  transform: translate(0, -5px);
+}
+
+
+/* ---------------- */
+
+.bg2 {
+  margin-top: 100px !important;
+  background-image: linear-gradient(0deg, rgba(248, 251, 252, 0.7), rgba(89, 144, 172, 0.5)), url(../image/background/bg2.jpg);
+  background-size: 100% 100%;
+  padding: 250px;
+  background-attachment: fixed;
+}
+
+/* ------------------------------ */
+
+
+.icons {
+  font-size: 100px;
+  text-align: center;
+
+}
+
+
+.fa-html5 {
+  color: #d73e12 !important;
+
+}
+
+.fa-css3-alt {
+  color: #0770b3;
+}
+
+.fa-js-square {
+  color: #f4aa3e;
+}
+
+
+.fa-bootstrap {
+  color: #7811f1;
+}
+
+/* ------------------------ */
+
+.divider {
+  border: 2px dashed white;
+  width: 30%;
+
+}
+
+.links a,
+.contactno a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+
+}

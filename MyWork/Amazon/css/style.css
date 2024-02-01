@@ -1,0 +1,459 @@
+:root {
+
+
+    --bs-modalbg: #f0f2f2;
+    --bs-btncolor: #febd69;
+    --bs-blackcolor: #000000;
+    --bs-bodybg: #e3e6e6;
+    --bs-bgcard: #dfe3eb;
+
+    --bs-bordercolor: #ededed;
+    --bs-footerbg: #37475a;
+    --bs-footerbg2: #232f3e;
+    --bs-btncolor2: #ffcb48;
+    --bs-footerbg3: #131A22;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.bg-modalbg {
+    background-color: var(--bs-modalbg) !important;
+}
+
+.bg-btncolor {
+    background-color: var(--bs-btncolor) !important;
+}
+
+.bg-btncolor2 {
+    background-color: var(--bs-btncolor2) !important;
+}
+
+.mybgcolor {
+    background-color: var(--bs-blackcolor) !important;
+}
+
+.bgbody {
+    background-color: var(--bs-bodybg) !important;
+}
+
+.bgcard {
+    background-color: var(--bs-bgcard) !important;
+}
+
+.myborder {
+    border-color: var(--bs-bordercolor) !important;
+}
+
+.bgfooter1 {
+    background-color: var(--bs-footerbg) !important;
+}
+
+.bgfooter2 {
+    background-color: var(--bs-footerbg2) !important;
+}
+
+.bgfooter3 {
+    background-color: var(--bs-footerbg3) !important;
+}
+
+.logo {
+    background: url("../images/background/nav-sprite-global-1x-hm-dsk-reorg._CB405938116_.png") no-repeat -10px -51px;
+    width: 96px;
+    height: 29px;
+    /* position:relative; */
+
+
+}
+
+.logohover:hover,
+.locationhover:hover,
+.ordershover:hover,
+.accounthover:hover,
+.carthover:hover {
+    border: 1px solid white !important;
+
+
+}
+
+.allbtn:hover {
+    background-color: #e1e2e2 !important;
+
+}
+
+/* .logo1{
+    text-decoration: none;
+    font-size: 11px;
+    color:white;
+ 
+    position:absolute;
+   margin-left:40px;
+   margin-top: -13px;
+} */
+.location {
+    background: url('../images/background/nav-sprite-global-1x-hm-dsk-reorg._CB405938116_.png') no-repeat -71px -306px;
+    width: 17px;
+    height: 20px;
+    /* position: relative; */
+}
+
+.location1 {
+    /* position:absolute; */
+    margin-left: 5px;
+    margin-top: -20px;
+
+
+}
+
+.cart {
+    background: url('../images/background/nav-sprite-global-1x-hm-dsk-reorg._CB405938116_.png') no-repeat -10px -340px;
+    width: 38px;
+    height: 26px;
+
+}
+
+.cart1 {
+
+    /* position:absolute; */
+    margin-left: 22px;
+    margin-top: -20px;
+
+
+
+
+}
+
+.flag {
+    background: url('../images/illustration/united-kingdom2.png') no-repeat;
+    /* width: 17px;
+	height: 20px; */
+}
+
+.flagbtn:hover {
+    border: 1px solid white !important;
+
+}
+
+.flag:hover {
+    border: none;
+    background-color: #000000 !important;
+}
+
+
+
+
+/* ----------text divider-------------- */
+.divider {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.divider::before,
+.divider::after {
+    flex: 1;
+    content: '';
+    padding: 0.5px;
+    background-color: #a4a0a0;
+    margin: 5px;
+}
+
+/* ------------------------------------------------ */
+
+
+.dropdown-menu {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* .dropdown-menu ul{
+    list-style: none;
+    padding: 0;
+} */
+.dropdown-menushow {
+    /* display: flex;
+    flex-direction: row; */
+    width: 300px;
+    overflow: hidden;
+}
+
+/* .dropdown-menu li a{
+    color: darkorange;
+    padding:15px;
+} */
+/* .dropdown-menu li:first-child a{
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+} */
+
+/* .dropdown:hover .dropdown-menushow{
+    display: flex;
+} */
+/* ---------------------------------------------- */
+
+.dropdown-menu {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-menushow1 {
+    /* display: flex;
+    flex-direction: column; */
+
+    width: 370px;
+    overflow: hidden;
+}
+
+.dropdown-menushow2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menushow1 .listclass {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown-menushow1 li a {
+    color: darkorange;
+    padding: 15px;
+}
+
+.dropdown-menushow1 li:first-child a {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.dropdownbtn:hover .dropdown-menushow1 {
+    margin-top: 60px;
+    display: flex;
+
+}
+
+
+nav ul li a {
+    color: white !important;
+}
+
+nav ul li:hover,
+nav button:hover {
+    border: 1px solid white !important;
+}
+
+
+/* /////// */
+
+.dropdown-menushowprime {
+    width: 330px;
+    padding: 15px;
+}
+
+/* ---------- */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 70px !important;
+    height: 250px !important;
+    /* color:#000000 !important; */
+}
+
+
+
+.fa-chevron-right,
+.fa-chevron-left {
+    color: #000000 !important;
+    font-size: 40px;
+
+
+}
+
+/* .carousel-control-next:hover, .carousel-control-prev:hover{
+    
+    border:2px solid white !important;
+    
+
+} */
+
+#carouselExampleInterval .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#carouselExampleInterval .carousel-item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(255, 255, 255, .1) 40%, rgba(255, 255, 255, .5) 75%, rgb(227, 226, 226) 100%) repeat scroll 0 0;
+    width: 100vw;
+    top: 0;
+    height: 100vh;
+}
+
+/* -------------------------------------- */
+
+.herocards {
+    margin-top: -400px !important;
+}
+
+/* ----------------------------silder--------------------- */
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h5 {
+
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(249, 248, 247)
+    }
+}
+
+/* ------------------------------------------- */
+
+
+/* ----------------------------------------------------------- */
+.card-wrapper .card {
+    width: 250px !important;
+
+
+}
+
+.card-wrapper .card img {
+    width: 150px !important;
+
+    padding: 5px;
+
+
+}
+
+/* ....................................................................... */
+
+.checked {
+    color: #f09c3c !important;
+
+}
+
+.smalltext {
+    font-size: 11px;
+}
+
+.gradient-buttons .btn {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(251, 247, 247, 0.216) 49%, rgba(169, 168, 168, 0.15) 51%, rgba(188, 186, 186, 0.05));
+    background-repeat: repeat-x;
+}
+
+.footer2 ul li a {
+    font-size: 15px !important;
+    color: #ccd1d4 !important;
+}
+
+.footer2 ul li a:hover {
+
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+.footer2 ul li {
+    margin-bottom: 10px;
+}
+
+.imagefooter {
+
+    background: url('../images/background/nav-sprite-global-1x-hm-dsk-reorg._CB405938116_.png') no-repeat -10px -90px;
+    width: 76px;
+    height: 23px;
+
+}
+
+.country a {
+    color: #ccd1d4 !important;
+    font-size: 13px;
+}
+
+.country a:hover {
+
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+.footer3 ul li a {
+    font-size: 13px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+    #carouselExampleCaptions .carousel-control-prev {
+        margin-top: -200px;
+    }
+
+    #carouselExampleCaptions .carousel-control-next {
+        margin-top: -200px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #carouselExampleCaptions .carousel-control-prev {
+        margin-top: -200px;
+    }
+
+    #carouselExampleCaptions .carousel-control-next {
+        margin-top: -200px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #carouselExampleCaptions .carousel-control-prev {
+        margin-top: -200px;
+    }
+
+    #carouselExampleCaptions .carousel-control-next {
+        margin-top: -200px;
+    }
+}
